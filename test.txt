@@ -3,3 +3,4 @@ echo "Enter input value as your name"
 read a
 echo $ a
 creating file in working tree
+adding data to remote files
