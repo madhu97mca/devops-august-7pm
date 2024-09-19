@@ -6,3 +6,4 @@ creating file in working tree
 adding data to remote files
 changes in qa branch
  fixing issues in application
+adding new file
