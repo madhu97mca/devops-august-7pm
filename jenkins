@@ -1,11 +1,10 @@
 pipeline {
     agent any
-    stages{
-    stage  ("1.update the system"){
-        steps{
-            sh "apt-get update -y"
-            sh "yum upate -y"
-
+    stages {
+        stage ("1. update the syste"){
+            steps {
+                sh "mkdir -p test"
+                sh "touch test.txt"
             }
         }
 
@@ -19,15 +18,8 @@ pipeline {
                 sh "df -h"
                 sh "du -ksh"
                 sh "touch iostat.txt"
-
-
-
-
-                
-
-
             }
-
         }
+    
     }
 }
