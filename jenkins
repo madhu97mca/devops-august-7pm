@@ -1,0 +1,33 @@
+pipeline {
+    agent any
+    stages{
+    stage  ("1.update the system"){
+        steps{
+            sh "apt-get update -y"
+            sh "yum upate -y"
+
+            }
+        }
+
+        stage ("2. print memory and disk"){
+            steps{
+                sh "ls"
+                sh "ls -a"
+                sh "lsblk"
+                sh "free -m"
+                sh "touch test.txt"
+                sh "df -h"
+                sh "du -ksh"
+                sh "iostat"
+
+
+
+
+                
+
+
+            }
+
+        }
+    }
+}
